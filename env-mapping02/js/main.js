@@ -4,7 +4,6 @@
     window.addEventListener('load', () => {
         initStats();
         init();
-        render();
     });
 
     //リサイズした時
@@ -74,6 +73,9 @@
 
                     torusMesh01 = new THREE.Mesh(torusGeo01, torusMaterial01);
                     scene.add(torusMesh01);
+
+                    render();
+
                 }
             };
             gui = new dat.GUI();

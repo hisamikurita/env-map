@@ -83,10 +83,9 @@
                         }
                         model.material = material;
                         scene.add(model);
-
-                        render();
                     }
                 };
+                render();
                 gui = new dat.GUI();
                 gui.addColor(controls, 'color').onChange(controls.redraw);
                 gui.add(controls, 'refractionRatio', 0, 1).onChange(controls.redraw);
